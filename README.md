@@ -1,2 +1,2 @@
-tweet-please
-============
+Wordpress Plugin: Tweet Please
+==============================

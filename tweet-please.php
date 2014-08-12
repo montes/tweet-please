@@ -18,6 +18,9 @@
  * Author URI: http://montesjmm.com
  * Author twitter: @montesjmm
  * License: GPL2
+ *
+ * Text Domain: tweet-please
+ * Domain Path: /languages
  */
 
 require_once(plugin_dir_path(__FILE__) . 'vendor/codebird.php');

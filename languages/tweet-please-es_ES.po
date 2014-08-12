@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tweet Please v1.0b\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-08-12 06:36:11+0000\n"
+"Last-Translator: montes <kalimocho@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: Montesjmm/TweetPleaseAdmin.php:28
+#@ tweet-please
+msgid "Tweet Text"
+msgstr "Texto para el Tweet"
+
+#: Montesjmm/TweetPleaseAdmin.php:29
+#@ tweet-please
+msgid "Twitter Consumer Key"
+msgstr "Twitter Consumer Key"
+
+#: Montesjmm/TweetPleaseAdmin.php:30
+#@ tweet-please
+msgid "Twitter Consumer Secret"
+msgstr "Twitter Consumer Secret"
+
+#: Montesjmm/TweetPleaseAdmin.php:33
+#@ tweet-please
+msgid "Attach Post Thumbnail"
+msgstr "Adjuntar la foto del post"
+
+#: Montesjmm/TweetPleaseAdmin.php:34
+#@ tweet-please
+msgid "Send When"
+msgstr "Enviar cuando"
+
+#: Montesjmm/TweetPleaseAdmin.php:35
+#@ tweet-please
+msgid "Inmediately"
+msgstr "Inmediatamente"
+
+#: Montesjmm/TweetPleaseAdmin.php:36
+#@ tweet-please
+msgid "After 1 hour"
+msgstr "1 hora después"
+
+#: Montesjmm/TweetPleaseAdmin.php:37
+#@ tweet-please
+msgid "After 2 hours"
+msgstr "2 horas después"
+
+#: Montesjmm/TweetPleaseAdmin.php:38
+#@ tweet-please
+msgid "After 4 hours"
+msgstr "4 horas después"
+
+#: Montesjmm/TweetPleaseAdmin.php:39
+#@ tweet-please
+msgid "At next 7am"
+msgstr "A las  próximas 7am"
+
+#: Montesjmm/TweetPleaseAdmin.php:40
+#@ tweet-please
+msgid "At next 8am"
+msgstr "A las  próximas 8am"
+
+#: Montesjmm/TweetPleaseAdmin.php:41
+#@ tweet-please
+msgid "At next 9am"
+msgstr "A las  próximas 9am"
+
+#: Montesjmm/TweetPleaseAdmin.php:42
+#@ tweet-please
+msgid "At next 10am"
+msgstr "A las  próximas 10am"
+
+#: Montesjmm/TweetPleaseAdmin.php:43
+#@ tweet-please
+msgid "At next 12am"
+msgstr "A las  próximas 12am"
+
+#: Montesjmm/TweetPleaseAdmin.php:44
+#@ tweet-please
+msgid "At next 1pm"
+msgstr "A las  próximas 1pm"
+
+#: Montesjmm/TweetPleaseAdmin.php:45
+#@ tweet-please
+msgid "At next 5pm"
+msgstr "A las  próximas 5pm"
+
+#: Montesjmm/TweetPleaseAdmin.php:46
+#@ tweet-please
+msgid "At next 8pm"
+msgstr "A las  próximas 8pm"
+
+#: Montesjmm/TweetPleaseAdmin.php:47
+#@ tweet-please
+msgid "At next 10pm"
+msgstr "A las  próximas 10pm"
+
+#: Montesjmm/TweetPleaseAdmin.php:48
+#@ tweet-please
+msgid "At next 12pm"
+msgstr "A las  próximas 12pm"
+
+#: views/settings-form.php:15
+#@ tweet-please
+msgid "Tweet Please Settings"
+msgstr "Configuración de Tweet Please"
+
+#: Montesjmm/TweetPleaseAdmin.php:31
+#@ tweet-please
+msgid "Twitter Access Token"
+msgstr "Twitter Access Token"
+
+#: Montesjmm/TweetPleaseAdmin.php:32
+#@ tweet-please
+msgid "Twitter Access Token Secret"
+msgstr "Twitter Access Token Secret"
+
+#. translators: plugin header field 'Name'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "Tweet Please"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "http://montesjmm.com/tweet-please"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "Automatically writes a new tweet when a new post is published"
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "Javier Montes"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "http://montesjmm.com"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: tweet-please.php:0
+#@ tweet-please
+msgid "1.0b"
+msgstr ""
+

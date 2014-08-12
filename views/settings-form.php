@@ -12,7 +12,7 @@
 
 <div class="wrap">
 
-	<h2>Tweet Please Settings</h2>
+	<h2><?=__('Tweet Please Settings', $pluginSlug)?></h2>
 
 	<form method="post">
 
@@ -32,6 +32,12 @@
 								break;
 							case 'textarea':
 								echo '<textarea name="' . $option['slug'] . '">' . get_option($option['slug'] , $option['default']) . '</textarea>';
+								break;
+							case 'checkbox':
+								if (get_option($option['slug'] , $option['default']) == 'on')
+									echo '<input type="checkbox" name="' . $option['slug'] . '" value="on" checked>';
+								else
+									echo '<input type="checkbox" name="' . $option['slug'] . '" value="on">';
 								break;
 							case 'select':
 								echo '<select name="' . $option['slug'] . '">';

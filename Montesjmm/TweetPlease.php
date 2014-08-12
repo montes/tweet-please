@@ -41,13 +41,13 @@ class TweetPlease {
 		load_plugin_textdomain($domain, FALSE, basename(plugin_dir_path(dirname(__FILE__))) . '/languages/');
 	}
 
-	public function postPublished($ID)
+	public function postPublished($postId)
 	{
 		$when              = get_option('tp_send_when');
 		$scheduleTimestamp = NULL;
 
 		if ($when == 'inmediately') {
-			$this->sendTweet($ID);
+			$this->sendTweet($postId);
 		} elseif (is_numeric($when) && $when < 24) {
 			if (date('H') >= $when) {
 				$scheduleTimestamp = strtotime('next day ' . $when . ':00 ');
@@ -59,27 +59,27 @@ class TweetPlease {
 		}
 
 		if ($scheduleTimestamp) {
-			wp_schedule_single_event($scheduleTimestamp, 'programmed_tweet', array($ID));
+			wp_schedule_single_event($scheduleTimestamp, 'programmed_tweet', array($postId));
 		}
 	}
 
-	public function sendTweet($ID)
+	public function sendTweet($postId)
 	{
-		$post = get_post($ID);
+		$post = get_post($postId);
 
 		Codebird\Codebird::setConsumerKey(get_option('tp_twitter_consumer_key'), get_option('tp_twitter_consumer_secret'));
 		$cb = Codebird\Codebird::getInstance();
 		$cb->setToken(get_option('tp_twitter_access_token'), get_option('tp_twitter_access_token_secret'));
 
 		$status = get_option('tp_tweet_text');
-		$status = str_ireplace('{POST_LINK}', get_permalink($ID), $status);
+		$status = str_ireplace('{POST_LINK}', get_permalink($postId), $status);
 		$status = str_ireplace('{POST_TITLE}', __($post->post_title), $status);
 
 		$tweet = array(
 			'status' => $status
 		);
 
-		$this->saveResponse($ID, $cb->statuses_update($tweet));
+		$this->saveResponse($postId, $cb->statuses_update($tweet));
 	}
 
 	protected function saveResponse($ID, $response)

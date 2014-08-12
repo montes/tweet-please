@@ -15,7 +15,7 @@ class TweetPleaseAdmin {
 
 	protected static $instance = null;
 
-	protected $plugin_slug = 'tweet-please';
+	protected $pluginSlug = 'tweet-please';
 
 	protected static $options = array(
 		array('name' => 'Tweet Text',                  'slug' => 'tp_tweet_text',                  'type' => 'textarea', 'default' => 'New post on my blog: {POST_TITLE} {POST_LINK}'),

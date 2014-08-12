@@ -14,6 +14,7 @@ namespace Montesjmm;
 class TweetPlease {
 
 	protected static $instance = null;
+	
 	protected $plugin_slug = 'tweet-please';
 
 	protected function __construct()
